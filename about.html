@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Brit | Techwear Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=The+Season&display=swap');
+        .font-season { font-family: 'The Season', serif; }
+        .font-josefin { font-family: 'Josefin Sans', sans-serif; }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation Header -->
+    <header class="fixed w-full bg-black py-4 px-6 z-50 shadow-lg transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="Images/Logo.webp" alt="BRIT | TECHWEAR" class="h-10 w-auto">
+            </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="guide.html" class="font-medium hover:text-gray-300 transition-colors">NEW FREE GUIDE</a>
+                <a href="portfolio.html" class="font-medium hover:text-gray-300 transition-colors">PORTFOLIO</a>
+                <a href="shop.html" class="font-medium hover:text-gray-300 transition-colors">SHOP</a>
+                <a href="about.html" class="font-medium text-white transition-colors">ABOUT</a>
+                <a href="services.html" class="font-medium hover:text-gray-300 transition-colors">SERVICES</a>
+                <a href="contact.html" class="font-medium hover:text-gray-300 transition-colors">CONTACT</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 absolute top-16 left-0 right-0 py-6 px-6 shadow-2xl border-t border-gray-700 backdrop-blur-sm">
+            <!-- Decorative Elements -->
+            <div class="absolute top-2 left-4 w-3 h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full opacity-60 animate-pulse"></div>
+            <div class="absolute top-4 right-6 w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full opacity-40 animate-bounce"></div>
+            
+            <div class="flex flex-col space-y-3 relative z-10">
+                <a href="index.html" class="group flex items-center space-x-3 font-medium text-gray-300 hover:text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-500/20 hover:to-pink-500/20 rounded-lg px-3 py-2 hover:scale-105 hover:translate-x-2">
+                    <i class="fas fa-home text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                    <span>HOME</span>
+                </a>
+                <a href="guide.html" class="group flex items-center space-x-3 font-medium text-gray-300 hover:text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-green-500/20 hover:to-emerald-500/20 rounded-lg px-3 py-2 hover:scale-105 hover:translate-x-2 relative">
+                    <i class="fas fa-file-alt text-green-400 group-hover:text-green-300 transition-colors duration-300"></i>
+                    <span>NEW FREE GUIDE</span>
+                    <span class="absolute -top-1 -right-1 bg-gradient-to-r from-green-400 to-emerald-400 text-xs px-1.5 py-0.5 rounded-full text-black font-bold animate-pulse">NEW</span>
+                </a>
+                <a href="portfolio.html" class="group flex items-center space-x-3 font-medium text-gray-300 hover:text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-cyan-500/20 rounded-lg px-3 py-2 hover:scale-105 hover:translate-x-2">
+                    <i class="fas fa-images text-blue-400 group-hover:text-blue-300 transition-colors duration-300"></i>
+                    <span>PORTFOLIO</span>
+                </a>
+                <a href="shop.html" class="group flex items-center space-x-3 font-medium text-gray-300 hover:text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-yellow-500/20 hover:to-orange-500/20 rounded-lg px-3 py-2 hover:scale-105 hover:translate-x-2">
+                    <i class="fas fa-shopping-bag text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300"></i>
+                    <span>SHOP</span>
+                </a>
+                <a href="about.html" class="group flex items-center space-x-3 font-medium text-white transition-all duration-300 bg-gradient-to-r from-pink-500/30 to-rose-500/30 rounded-lg px-3 py-2 scale-105 translate-x-2">
+                    <i class="fas fa-user text-pink-300 transition-colors duration-300"></i>
+                    <span>ABOUT</span>
+                </a>
+                <a href="services.html" class="group flex items-center space-x-3 font-medium text-gray-300 hover:text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-indigo-500/20 hover:to-purple-500/20 rounded-lg px-3 py-2 hover:scale-105 hover:translate-x-2">
+                    <i class="fas fa-cogs text-indigo-400 group-hover:text-indigo-300 transition-colors duration-300"></i>
+                    <span>SERVICES</span>
+                </a>
+                <a href="contact.html" class="group flex items-center space-x-3 font-medium text-gray-300 hover:text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-teal-500/20 hover:to-cyan-500/20 rounded-lg px-3 py-2 hover:scale-105 hover:translate-x-2">
+                    <i class="fas fa-envelope text-teal-400 group-hover:text-teal-300 transition-colors duration-300"></i>
+                    <span>CONTACT</span>
+                </a>
+            </div>
+            
+            <!-- Bottom Decorative Line -->
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-blue-500 to-teal-500 opacity-60"></div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="md:pt-12 pt-8">
+        <!-- About Page -->
+        <section class="min-h-screen py-20 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-4xl md:text-6xl font-bold mb-12 text-center slide-up" style="font-family: The Season;" >Meet The Woman Behind The Mask</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Image -->
+                    <div class="slide-up">
+                        <div class="relative overflow-hidden rounded-lg">
+                            <img src="Images/copy3b.jpg" 
+                                 alt="Brit - Techwear Fashion Creator" 
+                                 class="w-full h-96 object-cover img-zoom">
+                        </div>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="slide-up" style="animation-delay: 0.2s;">
+                        <p class="text-gray-300 mb-6 leading-relaxed font-josefin text-justify">
+                            Hey there! I'm so glad you're here! As a fashion influencer based in America, I love sharing my journey and the unique styles I embrace. For over 4 years now, I have been sharing with the world my passion for Techwear. Whether it’s showing off your new found style at specific events or simply enjoying a day out, I believe fashion should be fun and personal. So let's inspire each other to dress boldly and express ourselves!
+                        </p>
+
+                         <p class="text-gray-300 mb-6 leading-relaxed font-josefin text-justify">
+                           I am half Mexican half Caucasian yet I don’t know a bit of Spanish. I have 4 siblings and yes, they’re all girls! I live happily with my lovely partner and my beloved cat Meeko. You’ll see them pop up every now and then on either my photoshoots, videos, or my stories.
+                        </p>
+
+                         <p class="text-gray-300 mb-6 leading-relaxed font-josefin text-justify">
+                           I started out my career from my passion for Techwear. How did I get into that exactly? Well, it all started from a days scrolling on my Youtube’s homepage in 2018 when i noticed this music video “Heart Attack” from the musician himself, Scarlxrd. I then got into his music then from there, his style. 
+                        </p>
+                    </div>
+                </div>
+                 <!-- Continue -->
+                <p class="text-gray-300 mb-6 leading-relaxed font-josefin text-justify">
+                          I started out trying out the style for fun. I made fun little outfit posts on my old Instagram. I noticed other pages that also were into Techwear, Darkwear, and alternative fashion who posted more professional photos on their page. I saw some even collaborating with pretty expensive fashion brands. I then thought to myself, “Well if they’re making money off something they love doing, I might as well work my way up into that career path. Fashion brings me joy so I’m glad this is what I chose. 
+                </p>
+                 <p class="text-gray-300 mb-6 leading-relaxed font-josefin text-justify">
+                           I still may be a micro influencer with only a couple thousand followers supporting me at the moment, but that doesn’t mean I’m stopping there. Remember, it’s all about being yourself. There are countless fashion sources out there, but the magic happens when you add your own twist to the trends. You guys are the ones who keep me going. You guys are the ones who bring me motivation and you guys are the ones helping me through it all with your brilliant resources. We grow as a family!
+                </p>
+                
+                <!-- Stats Section -->
+                <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center slide-up" style="animation-delay: 0.4s;">
+                        <div class="text-4xl font-bold mb-2">4,928</div>
+                        <div class="text-gray-400">Instagram Followers</div>
+                    </div>
+                    <div class="text-center slide-up" style="animation-delay: 0.5s;">
+                        <div class="text-4xl font-bold mb-2">100+</div>
+                        <div class="text-gray-400">Techwear Looks Created</div>
+                    </div>
+                    <div class="text-center slide-up" style="animation-delay: 0.6s;">
+                        <div class="text-4xl font-bold mb-2">5+</div>
+                        <div class="text-gray-400">Years Experience</div>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+            
+        </section>
+    </main>
+
+    <!-- Footer -->
+   <footer class="bg-gradient-to-r from-gray-900 to-gray-800 py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex justify-center items-center">
+                <!-- Centered Content -->
+                <div class="text-center slide-up">
+                    <a href="index.html" class="inline-block mb-2">
+                        <img src="Images/Logo.webp" alt="BRIT | TECHWEAR" class="h-16 w-auto mx-auto">
+                        <p class="text-gray-400 font-josefin">Britxbrit</p>
+                    </a>
+                    <p class="text-gray-400 font-josefin">Techwear. Identity. Confidence.</p>
+                </div>
+            </div>
+            
+            <div class="mt-2 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm slide-up font-josefin" style="animation-delay: 0.6s;">
+                <p>© 2025 Brit | Techwear Fashion. All rights reserved.</p>
+                <p class="mt-2">Site by thefreewebsitewizards</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
