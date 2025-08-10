@@ -33,6 +33,28 @@ body {
     animation: slideUp 0.8s ease-out forwards;
 }
 
+/* Responsive Background Images */
+.hero-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Images/bg.png');
+    background-attachment: fixed;
+}
+
+/* Mobile background */
+@media (max-width: 768px) {
+    .hero-bg {
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Images/bg.png');
+        background-attachment: scroll; /* Fixed attachment can cause issues on mobile */
+    }
+}
+
+/* Desktop background */
+@media (min-width: 769px) {
+    .hero-bg {
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Images/bg2.png');
+        background-attachment: fixed;
+    }
+}
+
 /* Button effects */
 .btn-glow:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);

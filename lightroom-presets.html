@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Lightroom Presets | Brit | Techwear Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=The+Season&display=swap');
+        .font-season { font-family: 'The Season', serif; }
+        .font-josefin { font-family: 'Josefin Sans', sans-serif; }
+        
+        .slide-up {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideUp 1s ease-out forwards;
+        }
+        
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #1f2937, #374151);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .download-btn:hover {
+            background: linear-gradient(135deg, #374151, #4b5563);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        .preset-card {
+            background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .preset-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased bg-black text-white">
+    <!-- Navigation Header -->
+    <header class="fixed w-full bg-black py-4 px-6 z-50 shadow-lg transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="Images/Logo.webp" alt="BRIT | TECHWEAR" class="h-10 w-auto">
+            </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="guide.html" class="font-medium hover:text-gray-300 transition-colors">NEW FREE GUIDE</a>
+                <a href="portfolio.html" class="font-medium hover:text-gray-300 transition-colors">PORTFOLIO</a>
+                <a href="shop.html" class="font-medium hover:text-gray-300 transition-colors">SHOP</a>
+                <a href="about.html" class="font-medium hover:text-gray-300 transition-colors">ABOUT</a>
+                <a href="services.html" class="font-medium hover:text-gray-300 transition-colors">SERVICES</a>
+                <a href="contact.html" class="font-medium hover:text-gray-300 transition-colors">CONTACT</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-12">
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center px-4 relative">
+            <div class="container mx-auto text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6 slide-up text-white font-season">Free Lightroom Presets</h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-12 slide-up max-w-3xl mx-auto font-josefin" style="animation-delay: 0.3s;">Transform your techwear photography with my signature editing style. Download these exclusive presets for free and elevate your content creation.</p>
+                    
+                    <div class="mt-16 slide-up" style="animation-delay: 0.6s;">
+                        <a href="pdf.html" class="download-btn inline-block px-12 py-4 text-white font-bold rounded-lg font-josefin">
+                            <i class="fas fa-download mr-3"></i>Download Free Presets
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preset Showcase -->
+        <section class="py-12 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-4xl md:text-6xl font-bold mb-4 text-center slide-up font-season">What's Included</h2>
+                <p class="text-gray-400 text-center mb-16 font-josefin text-lg">Professional Lightroom presets designed for techwear photography</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Preset 1 -->
+                    <div class="preset-card-enhanced rounded-xl p-8 slide-up transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.2s; background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(50, 50, 50, 0.8) 100%); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                                <i class="fas fa-palette text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 font-season text-white">Urban Shadows</h3>
+                            <p class="text-gray-300 font-josefin leading-relaxed">Perfect for moody techwear shots with enhanced contrast and deep shadows that bring out the urban aesthetic.</p>
+                            <div class="mt-6 pt-4 border-t border-gray-600">
+                                <span class="text-sm text-gray-400 font-josefin">✨ Premium Quality</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Preset 2 -->
+                    <div class="preset-card-enhanced rounded-xl p-8 slide-up transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.4s; background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(50, 50, 50, 0.8) 100%); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+                                <i class="fas fa-adjust text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 font-season text-white">Neon Glow</h3>
+                            <p class="text-gray-300 font-josefin leading-relaxed">Enhance neon lights and create that cyberpunk aesthetic in your photos with vibrant color grading.</p>
+                            <div class="mt-6 pt-4 border-t border-gray-600">
+                                <span class="text-sm text-gray-400 font-josefin">🌟 Most Popular</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Preset 3 -->
+                    <div class="preset-card-enhanced rounded-xl p-8 slide-up transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.6s; background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(50, 50, 50, 0.8) 100%); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
+                        <div class="text-center">
+                            <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500 flex items-center justify-center">
+                                <i class="fas fa-sun text-2xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 font-season text-white">Clean Minimal</h3>
+                            <p class="text-gray-300 font-josefin leading-relaxed">Clean, minimal editing for bright daylight techwear photography with crisp, professional results.</p>
+                            <div class="mt-6 pt-4 border-t border-gray-600">
+                                <span class="text-sm text-gray-400 font-josefin">☀️ Daylight Ready</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructions Section -->
+        <section class="py-12 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-4xl md:text-6xl font-bold mb-12 text-center slide-up font-season">How to Install</h2>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center slide-up" style="animation-delay: 0.2s;">
+                            <div class="bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl font-bold">1</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 font-season">Download</h3>
+                            <p class="text-gray-300 font-josefin">Click the download button and save the .zip file to your computer.</p>
+                        </div>
+                        
+                        <div class="text-center slide-up" style="animation-delay: 0.4s;">
+                            <div class="bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl font-bold">2</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 font-season">Extract</h3>
+                            <p class="text-gray-300 font-josefin">Unzip the file to reveal the .xmp preset files.</p>
+                        </div>
+                        
+                        <div class="text-center slide-up" style="animation-delay: 0.6s;">
+                            <div class="bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <span class="text-2xl font-bold">3</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 font-season">Import</h3>
+                            <p class="text-gray-300 font-josefin">Import the presets into Lightroom and start editing!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-gray-800 py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex justify-center items-center">
+                <div class="text-center slide-up">
+                    <a href="index.html" class="inline-block mb-2">
+                        <img src="Images/Logo.webp" alt="BRIT | TECHWEAR" class="h-16 w-auto mx-auto">
+                        <p class="text-gray-400 font-josefin">Britxbrit</p>
+                    </a>
+                    <p class="text-gray-400 font-josefin">Creativity takes control</p>
+                </div>
+            </div>
+            
+            <div class="mt-2 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm slide-up font-josefin" style="animation-delay: 0.6s;">
+                <p>© 2025 Brit | Techwear Fashion. All rights reserved.</p>
+                <p class="mt-2">Site by thefreewebsitewizards</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function downloadPresets() {
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = '#'; // Replace with actual download link when presets are ready
+            link.download = 'Brit_Techwear_Lightroom_Presets.zip';
+            
+            // Simulate download (replace with actual file when available)
+            alert('Download will start when preset files are uploaded to the server. For now, this is a placeholder.');
+            
+            // Uncomment the following lines when you have actual preset files:
+            // document.body.appendChild(link);
+            // link.click();
+            // document.body.removeChild(link);
+        }
+        
+        // Mobile menu functionality
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu) {
+                mobileMenu.classList.toggle('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
