@@ -42,7 +42,7 @@ body {
 /* Mobile background */
 @media (max-width: 768px) {
     .hero-bg {
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Images/bg.png');
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Images/Welcome!\ I\'m\ Brit....jpg');
         background-attachment: scroll; /* Fixed attachment can cause issues on mobile */
     }
 }
@@ -50,7 +50,7 @@ body {
 /* Desktop background */
 @media (min-width: 769px) {
     .hero-bg {
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Images/bg2.png');
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Images/Welcome!\ I\'m\ Brit....jpg');
         background-attachment: fixed;
     }
 }
